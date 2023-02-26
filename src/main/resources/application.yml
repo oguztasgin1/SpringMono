@@ -1,0 +1,19 @@
+# Dikkat burada degerler (values), anahtarlardan (keys) ayri yazilir.
+# : dan sorna mutalaka bosluk olmalidir.
+# alt bilesenler bir tab icersinde tanimlanir.
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/Java5Test
+    username: postgres
+    password: burhan71
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
